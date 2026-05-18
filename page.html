@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Welcome Page</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background: linear-gradient(135deg,#141e30,#243b55);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+    }
+
+    .container{
+      width:100%;
+      max-width:1200px;
+    }
+
+    /* Heading */
+
+    .heading{
+      text-align:center;
+      color:white;
+      margin-bottom:50px;
+    }
+
+    .heading h1{
+      font-size:55px;
+      margin-bottom:15px;
+      letter-spacing:2px;
+    }
+
+    .heading p{
+      font-size:20px;
+      color:#dcdcdc;
+    }
+
+    /* Card Layout */
+
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:20px;
+      padding:35px 25px;
+      text-align:center;
+      color:white;
+      transition:0.4s;
+      box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+      transform:translateY(-12px) scale(1.03);
+      background:rgba(255,255,255,0.18);
+    }
+
+    .icon{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .card h2{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .card p{
+      font-size:16px;
+      line-height:1.7;
+      margin-bottom:25px;
+      color:#f1f1f1;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      border-radius:30px;
+      text-decoration:none;
+      background:white;
+      color:#243b55;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#00c6ff;
+      color:white;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px){
+
+      .heading h1{
+        font-size:40px;
+      }
+
+      .heading p{
+        font-size:17px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Heading -->
+
+    <div class="heading">
+      <h1>Welcome To Our Website</h1>
+      <p>Explore Technologies & Start Your Coding Journey</p>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="card-container">
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h2>HTML</h2>
+        <p>
+          Learn how to create the structure of websites using HTML in an easy and simple way.
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h2>CSS</h2>
+        <p>
+          Design beautiful, responsive and modern websites with powerful CSS styling.
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h2>JavaScript</h2>
+        <p>
+          Make your websites interactive and dynamic using JavaScript programming.
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚛️</div>
+        <h2>React JS</h2>
+        <p>
+          Build fast and modern frontend applications easily using React framework.
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h2>Node JS</h2>
+        <p>
+          Create backend servers and APIs with powerful Node JS technology.
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">💾</div>
+        <h2>MongoDB</h2>
+        <p>
+          Store and manage application data efficiently using MongoDB database.
+        </p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
