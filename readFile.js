@@ -1,4 +1,4 @@
-const { log } = require('console')
+// const { log } = require('console')
 const fs =require('fs')
 
 fs.appendFile('demo.txt','\n this is new file',(err,data)=>{
@@ -13,4 +13,10 @@ fs.readFile('demo.txt','utf-8',(err,data)=>{
         throw err
     }
     console.log(data);
+})
+fs.unlink('demo2.text',(err)=>{
+    if(err){
+        throw err
+    }
+    console.log('file deleted');    
 })
